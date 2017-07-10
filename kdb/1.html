@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<script>
+	
+	
+window.onload = function(){
+	
+	
+	var timer = setInterval(function(){	
+		if(localStorage.getItem("PTMData") != null){
+			
+			//document.body.innerHTML = localStorage.getItem("PTMData");
+			document.write(localStorage.getItem("PTMData"));
+			clearInterval(timer);
+		}
+		
+	},3000);
+}
+</script>
+</head>

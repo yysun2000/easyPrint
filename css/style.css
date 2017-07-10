@@ -1,0 +1,15 @@
+body{
+  margin:0 auto !important;
+}
+.ptmMemo{
+  background-color: #e4f9f9;
+}
+@media all {.bakCanvas  { display: none; } #breaks{display: block;} .printCanvas{display: none;} #originCanvas{margin:auto;display: block;}}
+
+@media print{.bakCanvas  { display: block;} #breaks{display: none;} .printCanvas{display: block;} #originCanvas{display: none;}}
+
+@media all { .page-break	{ display: none; }  .page	{ border : 0px !important; } }
+
+@media print {.page-break	{ display: block; page-break-before: always; }}
+
+@media print{ body {width:100%;-webkit-print-color-adjust:exact;}

@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+blockquote, q {quotes: none}
+blockquote:before, blockquote:after,q:before, q:after {ptmcontent:'';ptmcontent:none}
+input,select,textarea,button {vertical-align:middle}
+button {border:0 none;background-color:transparent;cursor:pointer}
+body {background:#404040}
+body,th,td,input,select,textarea,button {font-size:12px;line-height:1;font-family:'돋움',dotum,sans-serif;color:#333}
+a {color:#333;text-decoration:none}
+a:active, a:hover {text-decoration:none}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+
+/*==========================================*/
+
+body{background:url(../img/body_bg.gif);overflow:hidden;}
+#ptmheader{height:60px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#ecede8;}
+#ptmheader > div{min-width:550px;max-width:100%;margin:0 auto;}
+#ptmheader > div > div{position:relative;width:100%;}
+
+/*로고*/
+#logo{position:absolute;top:0;left:27px;}
+#logo > img{vertical-align:top;}
+
+/*아이콘 공통 스타일*/
+#ptmheader ul li a{overflow:hidden;display:inline-block;width:43px;height:60px;text-indent:-999999px;vertical-align:top;}
+#ptmheader ul li a:hover,
+#ptmheader ul li a:active,
+#ptmheader ul li a:focus{background-position:0 -60px;}
+
+/*중앙 아이콘 //  개수 증감에 따라 자동으로 중앙정렬. 개수 수정 시 #ptmheader > div의 min-width값 조절해주세요 */
+/*#ptmmain{text-align:center;}*/
+#ptmmain li{display:inline-block;margin-right:6px;}
+#ptmmain li:last-child{margin-right:0;}
+#ptmmain .menu01 > a{background:url(../img/icon_01.png) no-repeat 0 0;}
+#ptmmain .menu02 > a{background:url(../img/icon_02.png) no-repeat 0 0;}
+#ptmmain .menu03 > a{background:url(../img/icon_03.png) no-repeat 0 0;}
+#ptmmain .menu04 > a{background:url(../img/icon_04.png) no-repeat 0 0;}
+#ptmmain .menu05 > a{background:url(../img/icon_05.png) no-repeat 0 0;}
+#ptmmain .menu06 > a{background:url(../img/icon_06.png) no-repeat 0 0;}
+#ptmmain .menu07 > a{background:url(../img/icon_07.png) no-repeat 0 0;}
+#ptmmain .menu08 > a{background:url(../img/icon_08.png) no-repeat 0 0;}
+#ptmmain .menu09 > a{background:url(../img/icon_09.png) no-repeat 0 0;}
+#ptmmain .menu12 > a{background:url(../img/icon_12.png) no-repeat 0 0;}
+#ptmmain .menu12{position:relative;}
+#ptmmain .menu12 > .view + .zoom{display:block;}
+#ptmmain .menu12 > .zoom{display:none;position:absolute;top:87px;left:4px;width:100px;padding:0 10px;border:2px solid #362f2d;background-color:#ecede8;}
+#ptmmain .menu12 > .zoom > ul{position:relative;}
+#ptmmain .menu12 > .zoom > ul:before{content:"▲";position:absolute;left:4px;top:-11px;font-size:12px;color:#362f2d;}
+#ptmmain .menu12 > .zoom > ul > li{float:left;display:list-item;margin:0;}
+#ptmmain .menu12 > .zoom > ul > li:first-child{margin-right:10px;}
+
+#ptmmain .menu01 {margin-left : 15px;}
+#ptmmain .menu12 {margin-left : 4px;}
+#itest {border:0px;}
+/*우측 아이콘*/
+#onoff{position:absolute;top:0;right:27px;}
+#onoff:after{content:'';display:block;clear:both;}
+#onoff li{float:left;margin-right:10px;}
+#onoff li:last-child{margin-right:0;}
+#onoff .menu10 > a{background:url(../img/icon_10.png) no-repeat 0 0;}
+#onoff .menu11 > a{background:url(../img/icon_11.png) no-repeat 0 0;}
+
+#ptmcontainer #ptmcontent #itest{margin:0 auto;}
+
+@media print{.breakCanvas { display: block;} #breaks{display: none;} .printCanvas{display: block;} #originCanvas{display: none;}}
+@media print{.page-break {display: block; page-break-before: always; }}
+@media print{
+	body {width:100%;-webkit-print-color-adjust:exact;margin:0 auto !important; background-image:none !important;}
+}
