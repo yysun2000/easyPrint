@@ -10,5 +10,5 @@ The web printing solution.
 # Reference
 1. Shinhan Bank : https://www.shinhan.com
 2. The Korea Development Bank : https://www.kdb.co.kr
-# For Technical Support
-http://www.nagosoft.com
+# For Technical Support or About License Problem
+http://www.nagosoft.com 
